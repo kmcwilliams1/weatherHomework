@@ -1,0 +1,49 @@
+.header {
+    max-height: max-content;
+    width: 100%;
+    border: thin solid black;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: burlywood;    
+} 
+
+.searchBtn{
+    background-color: cornsilk;
+    color: blue;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    border: solid black 5px;   
+
+}
+
+
+.suggestedCities{
+    display: flex;
+    float: right;
+    border: black solid 5px;
+    height: 300px;
+    width: 190px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
