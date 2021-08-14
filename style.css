@@ -28,14 +28,16 @@
 
 
 .suggestedCities{
-    display: flex;
-    float: right;
     border: black solid 5px;
-    height: 300px;
+    height: max-content;
+    padding: 20px;
     width: 190px;
 }
 
-
+.fiveDayForecast{
+    display: flex;  
+    justify-content: center;
+}
 
 
 @media screen and (max-width: 768px) {

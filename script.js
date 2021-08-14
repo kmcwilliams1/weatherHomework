@@ -1,7 +1,7 @@
 // const currentDayEl = document.getElementById('currentDay')
-// var currentHour = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+// var currentHour = moment().format("dddd, MMMM Do YYYY");
 // currentDayEl.textContent = currentHour;
-
+// why is moment undefined?
 
 
 const searchBtnEl = document.querySelector('.searchBtn')
@@ -30,7 +30,7 @@ function todaysWeather(city) {
         return response.json();
       })
       .then(function (data) {
-        // var currentCity = data.main.temp
+        // var currentCity = data.main.temp      where is city in the localStorage
         // currentCityEl.innerHTML = currentCity       
         var temp = data.main.temp
         tempEl.innerHTML = "Today's temperature is " + temp + " degrees"
@@ -62,17 +62,16 @@ function fiveDayForecast(city){
       .then(function (data) {
         for (let i = 0; i < data.list.length; i++) {
             const element = data.list[i];
--
-            var div = document.createElement("div");
-              div.style.width = "100px";
-              div.style.height = "100px";
-              div.style.textAlign = "center";
-              div.style.background = "blue";
-              div.style.color = "white";
-              div.innerHTML =  temp + " degrees";
-              div.innerHTML = humidity + " degrees";  //do i need to move them from the previous function into the global scale
-              div.innerHTML = wind + " mph";
-          myPEl.append(div)    
+          //   var div = document.createElement("div");
+          //     div.style.width = "100px";
+          //     div.style.height = "100px";
+          //     div.style.textAlign = "center";
+          //     div.style.background = "blue";
+          //     div.style.color = "white";
+          //     div.innerHTML =  temp + " degrees";
+          //     div.innerHTML = humidity + " degrees";  //do i need to move them from the previous function into the global scale
+          //     div.innerHTML = wind + " mph";
+          // myPEl.append(div)    
 
     if(element.dt_txt.indexOf('12:00:00') !== -1){
     console.log(element);
