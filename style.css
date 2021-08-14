@@ -39,6 +39,29 @@
     justify-content: center;
 }
 
+/* 
+.forecast{
+    display: inline-block;
+    flex-wrap: wrap;
+    border: solid black 1px;
+} */
+
+
+
+a:link, a:visited {
+    background-color: green;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+
+
 
 @media screen and (max-width: 768px) {
     header {
