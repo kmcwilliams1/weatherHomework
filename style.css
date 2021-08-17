@@ -14,6 +14,11 @@
     background-color: burlywood;    
 } 
 
+body{
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .searchBtn{
     background-color: cornsilk;
     color: blue;
@@ -39,12 +44,14 @@
     justify-content: center;
 }
 
-/* 
+
 .forecast{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     border: solid black 1px;
-} */
+}
 
 
 
